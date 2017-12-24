@@ -164,6 +164,26 @@ box-shadow: 5px 5px #FFDAB9;}
 .container .jumbotron{
 	padding: 0;}
 
+.category-tile{
+	border: 2px solid black;
+	overflow: hidden;
+	width: 200px;
+	height: 150px;
+	margin: 0 auto 15px;
+}
+
+.category-tile span{
+	position: absolute;
+	bottom: 17px;
+	right: 22px;
+	width: 82%;
+	text-align: center;
+	background-color: black;
+	opacity:.75;
+}
+
+
+
 .panel-footer{
 	margin-top: 30px;
 	padding-top: 35px;
@@ -246,5 +266,14 @@ width: 360px;
 	#menu-tile, #specials-tile{
 		width: 280px;
 		margin: 0 auto 15px;
+	}
+
+	.col-xxs-12{
+		position: relative;
+		float: left;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		width: 100%
 	}
 }
