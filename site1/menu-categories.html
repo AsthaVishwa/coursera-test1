@@ -10,7 +10,26 @@
 	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css\styles1.css">
 	<link href="https://fonts.google.com/specimen/Oxygen?selection.family=Oxygen">
+
+	<script>
+
+	function choosePage(argument) {
+			if(argument===0){
+		window.location.assign("breakfast.html")
+	}
+else if(argument===1)
+	{
+		window.location.assign("lunch.html")
+	}
+else
+	{
+		window.location.assign("dinner.html")
+	}
+	}
+
+</script>
 </head>
+
 <body>
 
 
@@ -69,10 +88,10 @@
 
 <Section class="row">
 <div class="col-md-3 col-sm-4 col-xs-6">
-<a href="single-category.html">
+<a onclick="choosePage(0)" >
 <div class="category-tile">
-<img src="menucategory1.jpg" alt="" width="200" height="150">
-<span>Lunch</span>
+<img src="breakfast.jpg" alt="" width="200" height="150">
+<span>Breakfast</span>
 </div>	
 </a>
 </div>
@@ -80,9 +99,9 @@
 
 
 <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-<a href="single-category.html">
+<a onclick="choosePage(1)">
 <div class="category-tile">
-<img src="menucategory1.jpg" alt="" width="200" height="150">
+<img src="lunch.jpg" alt="" width="200" height="150">
 <span>Lunch</span>
 </div>	
 </a>
@@ -90,78 +109,14 @@
 
 
 <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-<a href="single-category.html">
+<a onclick ="choosePage(2)">
 <div class="category-tile">
-<img src="menucategory1.jpg" alt="" width="200" height="150">
-<span>Lunch</span>
+<img src="dinner.jpg" alt="" width="200" height="150">
+<span>Dinner</span>
 </div>	
 </a>
 </div>
 
-
-
-<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-<a href="single-category.html">
-<div class="category-tile" width="200" height="150">
-<img src="menucategory1.jpg" alt="">
-<span>Lunch</span>
-</div>	
-</a>
-</div>
-
-
-
-<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-<a href="single-category.html">
-<div class="category-tile" width="200" height="150">
-<img src="menucategory1.jpg" alt="">
-<span>Lunch</span>
-</div>	
-</a>
-</div>
-
-
-
-<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-<a href="single-category.html">
-<div class="category-tile" width="200" height="150">
-<img src="menucategory1.jpg" alt="">
-<span>Lunch</span>
-</div>	
-</a>
-</div>
-
-
-
-<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-<a href="single-category.html">
-<div class="category-tile" width="200" height="150">
-<img src="menucategory1.jpg" alt="">
-<span>Lunch</span>
-</div>	
-</a>
-</div>
-
-
-
-<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-<a href="single-category.html">
-<div class="category-tile" width="200" height="150">
-<img src="menucategory1.jpg" alt="">
-<span>Lunch</span>
-</div>	
-</a>
-</div>
-
-
-<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-<a href="single-category.html">
-<div class="category-tile" width="200" height="150">
-<img src="menucategory1.jpg" alt="">
-<span>Lunch</span>
-</div>	
-</a>
-</div>
 
 	
 </Section>

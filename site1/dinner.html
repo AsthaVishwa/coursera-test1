@@ -10,8 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css\styles1.css">
 	<link href="https://fonts.google.com/specimen/Oxygen?selection.family=Oxygen">
-
-	
 </head>
 <body>
 
@@ -32,7 +30,7 @@
 	</div> 
 
 
-    <button id ="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
     <span class="sr-only">Toggle Naviagtion</span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
@@ -43,7 +41,7 @@
 
     <div id="collapsable-nav" class="collapse navbar-collapse">
 	<ul id="nav-list" class="nav navbar-nav navbar-right">
-	<li>
+	<li class="active">
 	<a href="menu-categories.html">
 	<center><span class="glyphicon glyphicon-cutlery"></span></center><br class="hidden-xs"><center>Menu</center></a>
 	</li>
@@ -65,28 +63,65 @@
 </nav>
 </header>
 
-<div id="main-content" class="container">
-<div class="jumbotron">
 
-<img src="R3.jpg" alt="Restaurant picture" class="img-responsive visible-xs">		
+<div class="container ng-scope">
+
+<h2 id="menu-categories-title" class="text-center">Single Category</h2>
+<div class="text-center ng-binding"></div>
+
+
+
+
+<menu-item ng-repeat = "menuItem in meniItenCtrl.menuItems.menu_items" menu-item="menuItem" class="ng-scope ng-isolate-scope">
+
+<div class = "menu-tem-tile col-md-6">
+<div class="row">
+<div class="col-sm-5">
+<div class ="menu-item-photo">
+<div class="ng-binding">SP1</div>
+<img class ="img-responsive" width="250" height="150" ng-src="gajarhalwa.jpg" src="gajarhalwa.jpg">
+</div>
+<div class="menu-item-price ng-binding">
+<span class="ng-binding"> "$19.95"</span>
+<span class="ng-binding"></span>
+</div>
+</div>
+<div class="menu-item-description col-sm-7">
+	<h3 class="menu-item-title ng-binding">Gajar ka halwa</h3>
+	<p class="menu-item-details ng-binding">Let's have gajar ka halwa, everyone's favorite.</p>
+
+</div>
+</div>
 </div>
 
-<div id="home-tiles" class="row">
-<div class="col-lg-4 col-md-4 col-sm-6  col-xs-12">
-	<a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a></div>
 
-<div class="col-lg-4 col-md-4 col-sm-6  col-xs-12">
-	<a onclick="getMeRandomPage()" 
-	><div id="specials-tile"><span>specials</span></div></a></div>
 
-<div class="col-lg-4 col-md-4 col-sm-12  col-xs-12">
-	<a href="https://www.google.co.in/maps/place/Adarsh+Palm+Retreat+Daffodils/@12.9168321,77.6878878,17z/data=!3m1!4b1!4m8!1m2!10m1!1e3!3m4!1s0x3bae1305209d2067:0xbc4fc9fde48bc7c8!8m2!3d12.9168321!4d77.6900765" target="_blank"><div id="map-tile">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8582289197116!2d77.68788781437456!3d12.916832090891855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1305209d2067%3A0xbc4fc9fde48bc7c8!2sAdarsh+Palm+Retreat+Daffodils!5e0!3m2!1sen!2sin!4v1514028553926" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-<span>map</span></div></a></div>
+<menu-item ng-repeat = "menuItem in meniItenCtrl.menuItems.menu_items" menu-item="menuItem" class="ng-scope ng-isolate-scope">
+
+<div class = "menu-tem-tile col-md-6">
+<div class="row">
+<div class="col-sm-5">
+<div class ="menu-item-photo">
+<div class="ng-binding">SP4</div>
+<img class ="img-responsive" width="250" height="150" ng-src="gulabjamun.jpg" src="gulabjamun.jpg">
+</div>
+<div class="menu-item-price ng-binding">
+<span class="ng-binding"> "$19.95"</span>
+<span class="ng-binding"></span>
+</div>
+</div>
+<div class="menu-item-description col-sm-7">
+	<h3 class="menu-item-title ng-binding">Gulab Jamun</h3>
+	<p class="menu-item-details ng-binding">Gulab jamun is the best dessert you can have after meal.</p>
 
 </div>
 </div>
+</div>
 
+
+
+
+</div>
 
 <footer class="panel-footer">
 	<div class="container">
@@ -108,43 +143,17 @@
 
 			<section id="Testimonials" class="col-sm-4">
 			<p>"Tastiest food ever"</p></section>
-            </div>
+</div>
 
 				
 			<section>
 			<div class="text-center">&copy; Bon Appetit Restaurant 2017</div></section>
 
-    </div>
+</div>
 </footer>
-
-
-
 <script src="js\jquery-3.2.1.min.js"></script>
 <script src="js\bootstrap.min.js"></script>
 <script src="js\script.js"></script>
-<script>
-function getMeRandomPage(){
-	var randomNumber = getRandomInt(3)
-	choosePage(randomNumber)
-}
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-	function choosePage(argument) {
-			if(argument===0){
-		window.location.assign("breakfast.html")
-	}
-else if(argument===1)
-	{
-		window.location.assign("lunch.html")
-	}
-else
-	{
-		window.location.assign("dinner.html")
-	}
-	}
-</script>
 </body>
 </html>
