@@ -134,6 +134,9 @@
 	margin-right: 20px;
 	float: right;
 }
+#space{
+	margin: 5px;
+}
 #r1{
 	width: 95%;
 	color: grey;
@@ -151,7 +154,34 @@
 	font-size: 12px;
 	margin-top: 70px;
 }
-
+@media(min-width:1200){
+	#header-nav{
+		width: 100%;
+	}
+	div.container1{
+    width: 95%
+	}
+	#img1{
+		width: 100%
+	}
+	#button{
+		width: 100%
+	}
+}
+@media(min-width: 992) {
+	#header-nav{
+		width: 100%;
+	}
+	div.container1{
+    width: 95%
+	}
+    #img1{
+		width: 100%
+	}
+	#button{
+		width: 100%
+	}
+}
 
 
 @media(min-width: 768px) and (max-width: 991px){
