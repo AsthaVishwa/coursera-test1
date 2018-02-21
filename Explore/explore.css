@@ -1,4 +1,5 @@
 #header-nav{
+	width: 100%;
 	height: 150px;
 	background: #e8486f;
 	font-family: : helvetica;
@@ -67,6 +68,7 @@
 	color: #787887;
 }
 #button{
+	width: 100%
 	font-size: 24px;
 	height: 60px;
 	background-color: #e8486f;
@@ -84,21 +86,36 @@
 	font-size: 24px;
 }
 #box{
-	border: 2px solid black;
-	border-radius: 4px;
-	width: 1230px
+	margin-top: 30px;
+	width: 100%;
 	height: 150px;
+	border: 2px solid grey;
+	border-radius: 4px;
+}
+#box1{
+	width: 16%;
+	height:25%;
+	text-align: center;
+	border: 1px dashed grey;
+    font-size: 24px;
+    color: #e8486f;
+    float: right;
+    margin-right: 40px;
 }
 #t13{
-	margin-top: 30px;
+	margin-top: 10px;
 	margin-bottom: 5px;
+	margin-left: 20px;
 	font-size: 24px;
 	font-weight: bold;
 }
 #t14{
 	text-align: right;
-	font-size: 15px;
+	margin-right: 40px;
 	color: #787887;
+}
+#a{
+	margin-left: 20px;
 }
 #foot{
 	background: #2d2d32;
@@ -117,10 +134,14 @@
 	margin-right: 20px;
 	float: right;
 }
+#r1{
+	width: 95%;
+	color: grey;
+}
 #t15{
 	margin-top: 30px;
 	font-size: 15px;
-	color: #ffffff;
+	color: grey;
 	margin-left:20px;
 }
 #t16{
@@ -132,36 +153,6 @@
 }
 
 
-
-@media(min-width:1200){
-	#header-nav{
-		width: 100%;
-	}
-	div.container1{
-    width: 95%
-	}
-	#img1{
-		width: 100%
-	}
-	#button{
-		width: 100%
-	}
-}
-
-@media(min-width: 992) and (max-width: 1199){
-	#header-nav{
-		width: 100%;
-	}
-	div.container1{
-    width: 95%
-	}
-    #img1{
-		width: 100%
-	}
-	#button{
-		width: 100%
-	}
-}
 
 @media(min-width: 768px) and (max-width: 991px){
 	#header-nav{
