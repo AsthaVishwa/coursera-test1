@@ -1,0 +1,153 @@
+/* Navigation bar and introduction and images of underwater land */
+nav.navbar{
+	background-color: #00004d;
+}
+#mainhead{
+	border: 2px solid white;
+	width: 50px;
+	height: 50px;
+	padding: 3px 3px 3px 3px;
+	font-size:25px;
+	color: white;
+}
+#table1{
+	width: 70%;
+	text-align: center;
+	margin-top: 250px;
+	border: 3px solid white;
+}
+
+#td1{
+	font-size: 40px;
+}
+#td2{
+	font-size: 30px;
+}
+#td3{
+	font-size: 18px;
+}
+#top{
+	background-image: url(coral-reef.jpg);
+    color: white;
+    text-decoration: bold;
+    height: 800px;
+    margin-top: 50px;
+}
+/* All the information and facts about the underwater land*/
+#top2{
+	background-image: url(underwater1.jpg);
+    color: white;
+    text-decoration: bold;
+    height: 500px;
+}
+#table2{
+	width: 75%;
+	text-align: center;
+	margin-top: 150px;
+	border: 3px solid white;
+}
+/*Information regarding species of underwater land */
+#top3{
+margin-top: 100px;	
+height: 500px;
+}
+#fishtext{
+	padding-top: 10px;
+}
+#fishtext1{
+	height: 40px;
+}
+.col-lg-4{
+	border: 2px solid black;
+	height: 350px;
+	padding-right: 2px;
+}
+.jumbotron{
+	height: 800px;
+	position: relative;
+}
+
+/* Clip of underwater land */
+#top4{
+margin: 0;
+}
+div.embed-responsive-item{
+	margin: 0;
+	height: 100%;
+}
+
+button.ibtn{
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	width: 8%;
+	height: 12%;
+	text-align: center;
+	font-size: 20px;
+	color: gray;
+	background-color: black;
+	opacity: 0.7;
+	border: 0;
+	border-radius: 50%;
+
+}
+button.ibtn:hover{
+   background-color: gray;
+   width: 9%;
+   height: 14%;
+   color: white;
+}
+
+/*Persuade user to sign up */
+#top5{
+	background-image: url(underwater2.jpg);
+	height: 600px;
+	border: 2px solid white;
+
+}
+#td4{
+	font-size: 30px;
+	color: white;
+	}
+
+#td5{
+	font-size: 20px;
+	color: white;
+	}	
+/* Little about the site */
+#top6{
+	background-color: #00004d;
+    height: 300px;
+    color:  grey;
+}
+p.main{
+	margin-top: 50px;
+	text-align: center;
+}
+#bottomtext{
+	margin-top: 40px;
+}
+#table3{
+	width: 55%;
+	height: 150px;
+	text-align: center;
+	margin-top: 150px;
+	border: 3px solid white;
+}
+/*signup page*/
+div.signupcon{
+	margin-top: 120px;
+
+}
+.form-horizontal{
+	position: relative;
+	left: 20%;
+}
+input.form-control{
+	background-color: black;
+	opacity: 0.6;
+}
+label{
+	color: #00004d;
+	text-align: right;
+}

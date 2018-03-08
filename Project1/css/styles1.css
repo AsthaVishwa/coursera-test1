@@ -1,0 +1,279 @@
+body{font-size: 16px;
+color: black;
+background-color: #BC8F8F;
+}
+
+.navbar-header{
+	width: 320px;
+	height: 100px;
+}
+
+#header-nav{
+	background-color: #FFFAFA;
+	border-radius: 0;
+	border: 0;
+}
+
+}
+#image{
+	background: url("slogan.jpg");
+	width: 150px;
+	height: 100px;
+}
+
+.navbar, .navbar-default{
+	height: 100px;
+}
+.navbar-brand{
+	padding: 0;
+	margin: 0;
+	width: 500px
+}
+
+.navbar-brand div>img{
+	width: 110px;
+	height:80px;
+	opacity: 0.6;
+	margin-left: 5px;
+	margin-bottom: 0;
+	padding: 0;
+	position: relative;
+	top: -30px
+
+}
+.navbar-brand>img{
+width: 150px;
+height: 100px;
+margin-top: 0;
+margin-left: 0;
+padding: 5px;
+
+}
+.navbar-brand h1{
+	color: 	#00FFFF;
+	font-weight:550; 
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 2px #F0FFFF;
+	margin-top: 15px;
+	padding-left: 5px;
+	margin-bottom: 0;
+
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+
+
+#nav-list a:hover{
+	background-color: #F0FFFF;
+}
+#phone{
+	margin-right: 10px;
+	margin-left: 40px;
+}
+
+#phone a{
+	padding: 0;
+	margin-top: 35px;
+}
+#phone div{
+	margin-top: 2px;
+	font-size: .80em;
+	text-align: right;
+	color: #000080;
+}
+.navbar-toggle{
+	margin: 20px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+border: 1px solid #00FFFF;
+}
+.navbar-header button.navbar-toggle{
+	clear: both;}
+
+
+.navbar-header{
+width: 750px;
+}
+.navbar-toggle{
+	margin-top: -20px;
+}
+
+}
+
+#collapsable-nav a span{ 
+	align-content: center;
+
+}
+.container .jumbotron{
+	padding: 0;
+}
+#menu-tile, #specials-tile, #map-tile{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	border: 2px solid #00FFFF;
+}
+
+
+/*Tiles*/
+
+#menu-tile, #specials-tile, #map-tile{
+	width: 100%;
+	height: 250px;
+	border: 2px solid ;
+	overflow: hidden;
+
+}
+
+
+
+#menu-tile{
+	background: url(../menudish.jpg) no-repeat;
+	background-position: center;
+}
+
+#specials-tile{
+	background: url(../specialdish.jpg) no-repeat;
+	background-position: center;
+}
+
+#menu-tile{
+	background: url(../menudish.jpg) none;
+	background-position: center;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+box-shadow: 5px 5px #FFDAB9;}
+
+#menu-tile span, #specials-tile span, #map-tile span{
+	position: absolute;
+	bottom: 15px;
+	right: 16px;
+	width: 92%;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: black;
+	color: white;
+	opacity: .75;
+}
+
+.container .jumbotron{
+	padding: 0;}
+
+.category-tile{
+	border: 2px solid black;
+	overflow: hidden;
+	width: 200px;
+	height: 150px;
+	margin: 0 auto 15px;
+}
+
+.category-tile span{
+	position: absolute;
+	bottom: 17px;
+	right: 22px;
+	width: 82%;
+	text-align: center;
+	background-color: black;
+	opacity:.75;
+}
+
+
+
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #FFE4E1; 
+}
+
+.panel-footer div.row{
+	margin-bottom: 30px;
+}
+#hours, #address{
+	line-height: 1.5;
+}
+
+#hours>span, #address>span{
+	font-size: 1.2em;
+}
+
+#testimonials p{
+	font-style: italic;
+}
+
+	/*media start*/
+}
+@media(min-width:1200){
+	
+}.jumbotron{
+	background: url(../R1.jpg) no-repeat;
+	padding: 0;
+	height: 646px;
+    box-shadow: ;
+    border:;
+}
+
+@media(min-width: 992) and (max-width: 1199){
+#collapsable-nav{
+	height: 100px;}
+	
+.jumbotron{
+	background: url(../R2.jpg) no-repeat;
+	padding: 0;
+	height: 500px;
+	
+}}
+
+@media(min-width: 768px) and (max-width: 991px){
+#collapsable-nav{
+	height: 100px;}
+	
+	.jumbotron{
+	background: url(../R3.jpg) no-repeat;
+	padding: 0;
+	height: 400px;}}
+
+@media(max-width: 767px){
+
+.navbar-brand h1{
+	
+	font-size: 1.2em;
+}
+
+
+#collapsable-nav{
+	background-color: 	#E0FFFF;}
+
+.jumbotron{
+	height: 370;
+}
+#menu-tile, #specials-tile{
+	width: 360px;
+	position: center;
+
+}
+#menu-tile span, #specials-tile span{
+width: 360px;
+}
+}
+@media(max-width: 479px)
+{
+	#menu-tile, #specials-tile{
+		width: 280px;
+		margin: 0 auto 15px;
+	}
+
+	.col-xxs-12{
+		position: relative;
+		float: left;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		width: 100%
+	}
+}
