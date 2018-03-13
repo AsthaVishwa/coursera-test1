@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Signup Page</title>
+  <title>Contact</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="1st project.css">	
+<link rel="stylesheet" type="text/css" href="1st project.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script type="text/javascript" src="1st project.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
-<div class="container-fluid" >
+<!-- Navigation bar and introduction and images of underwater land -->
+<div class="container-fluid">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#"><span id="mainhead">UA</span> Underwater Adventures</a>
+      <a class="navbar-brand" href="1st project.html"><span id="mainhead">UA</span> Underwater Adventures</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="1st project.html">Home</a></li>
+        
         <li><a href="#" >Look for other reefs</a></li>
+
         <li><a href="aboutus.html">About us</a></li> 
         <li><a href="contact.html">Contact</a></li> 
       </ul>
@@ -35,49 +39,29 @@
         <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
-  </div>
+ 
 </nav>
 </div>
 
+<!--Contact us details -->
+<div class="container-fluid" id="cont">
 
-<div class="container-fluid" id="top" margin-top="100px">
-<div class="container signupcon" id="signupcon">
+ </div> 
 
-<form name="form">
-  <div class="form-group">
-    <label  for="Firstname1">Enter First name</label>
-    <input name="Firstname" type="text" class="form-control" id="text" placeholder="Enter Firstname"></div>
-  
-
-  <div class="form-group">
-    <label for="Secondname1">Enter Second name</label>
-    <input name="Secondname" type="text" class="form-control" id="text" placeholder="Enter Secondname"></div>
-
-  <div class="form-group">
-    <label  for="email1">Enter email</label>
-    <input name="email" type="email" class="form-control" id="email" placeholder="Enter emailID">
-  </div>
-
-  <div class="form-group">
-    <label  for="pwd1">Enter Password</label>
-   <input name="Passworda" type="Password" class="form-control" id="pwd" placeholder="Enter Password"></div>
-  
- 
-  <div class="form-group">
-    <label  for="pwd2">Confirm Password</label>
-    <input name="Passwordb" type="Password" class="form-control" id="pwd" placeholder="Enter Password">
-  </div>
-  
-
-    <button type="submit" class="btn btn-default" id="submitbutton" onclick="function1()"><center>Submit</center></button>	
-</form>
-</div>
-</div>
-
+<!-- Little about the site -->
 <div class="container-fluid" id="top6">
 <center><p id="mainhead" class="main">UA</p>
 <div class="container-fluid" id="bottomtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></center>
 <hr>
+<ul class="pagination pagination-lg pagination-md pagination-sm">
+  <li><a href="1st project.html">1</a></li>
+</ul>
+<div id="date" class="bottom-right"></div>
 </div>
+
+<script type="text/javascript">
+  var d = new Date();
+document.getElementById("date").innerHTML =  d.toDateString();
+</script>
 </body>
 </html>

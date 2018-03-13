@@ -33,6 +33,15 @@ nav.navbar{
     height: 800px;
     margin-top: 50px;
 }
+#date{
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-bottom: 0;
+	float: right;
+}
+.pagination{
+	margin-top: 0;
+}
 /* All the information and facts about the underwater land*/
 #top2{
 	background-image: url(underwater1.jpg);
@@ -53,6 +62,7 @@ height: 500px;
 }
 #fishtext{
 	padding-top: 10px;
+	height: 400px
 }
 #fishtext1{
 	height: 40px;
@@ -93,8 +103,7 @@ button.ibtn{
 }
 button.ibtn:hover{
    background-color: gray;
-   width: 9%;
-   height: 14%;
+   
    color: white;
 }
 
@@ -113,11 +122,25 @@ button.ibtn:hover{
 #td5{
 	font-size: 20px;
 	color: white;
-	}	
+     }	
+
+#submitbutton{
+	border: 1px solid black;
+	border-radius: 10%;
+	color: white;
+    background-color: black;
+    opacity: 0.9;
+    position: relative;
+    left: 40%;
+}	
+
+.btn-default .btn:hover {
+    background-color:  white;
+	}
 /* Little about the site */
 #top6{
 	background-color: #00004d;
-    height: 300px;
+    height: 320px;
     color:  grey;
 }
 p.main{
@@ -134,20 +157,81 @@ p.main{
 	margin-top: 150px;
 	border: 3px solid white;
 }
-/*signup page*/
-div.signupcon{
-	margin-top: 120px;
 
+/* comments from people*/
+#top7{
+	background-color:#002233;
+    height: 300px;
+    color: grey;
 }
-.form-horizontal{
+
+#top7margin{
+	margin-top: 25px;
+}
+/*About us*/
+#size{
+	margin-top: 50px;
+    background-color:#000066;
+}
+@media(min-width: 1200){
+	#size div.container-fluid{
+		margin-top: 50px;
+		width: 100%;
+		height: 620px;
+}
+iframe{
+	width:100%; 
+	height:100%;
+}
+#reefname{
+	font-size: 100px;
+	height: 100px;
+	color: white;
 	position: relative;
-	left: 20%;
+	left: 100px;
 }
+
+/*Contact us*/
+#cont{
+	height: 300px;
+	background: #002233;
+}
+
+/*signup page*/
+
+#signupcon{
+	width: 60%;
+	height: 60%;
+	margin-top: 120px;
+    background-color: #00004d;
+	opacity: 0.7;
+}
+#signincon{
+	width: 60%;
+	height: 28%;
+	margin-top: 120px;
+    background-color: #00004d;
+	opacity: 0.7;
+}
+form{
+	width: 60%;
+	position: relative;
+	left: 5%;
+	top: 7%;
+}
+
+input{
+	margin-left: 20px;
+}
+
 input.form-control{
 	background-color: black;
-	opacity: 0.6;
+	
 }
 label{
-	color: #00004d;
-	text-align: right;
+	color: grey;
+}
+#submitbutton{
+	color: white;
+	background-color: black;
 }
