@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+<script type="text/javascript" src="Calculator.js"></script>	
+<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+<div class="forms">
+<form name="form">
+
+<input class="result" type="text" name="answer">	<br><br>
+
+<input class="no" type="button" name="1" value="1" onclick="form.answer.value += '1'">
+<input class="no" type="button" name="2" value="2" onclick="form.answer.value += '2'">
+<input class="no" type="button" name="3" value="3" onclick="form.answer.value += '3'"><br>
+
+<input class="no" type="button" name="4" value="4" onclick="form.answer.value += '4'">
+<input class="no" type="button" name="5" value="5" onclick="form.answer.value += '5'">
+<input class="no" type="button" name="6" value="6" onclick="form.answer.value += '6'"><br>
+
+<input class="no" type="button" name="7" value="7" onclick="form.answer.value += '7'">
+<input class="no" type="button" name="8" value="8" onclick="form.answer.value += '8'">
+<input class="no" type="button" name="9" value="9" onclick="form.answer.value += '9'"><br>
+
+<input class="no" type="button" name="+" value="+" onclick="form.answer.value += '+'">
+<input class="no" type="button" name="-" value="-" onclick="form.answer.value += '-'">
+<input class="no" type="button" name="*" value="*" onclick="form.answer.value += '*'"><br>
+
+<input class="no" type="button" name="/" value="/" onclick="form.answer.value += '/'">
+<input class="no" type="button" name="0" value="0" onclick="form.answer.value += '0'">
+<input class="no" type="button" name="=" value="=" onclick="form.answer.value = eval(form.answer.value)"><br>
+
+<input class="clearbtn" type="button" name="clear" value="Clear" onclick="form.answer.value = ''">
+
+</form>	
+
+	
+</div>
+
+</body>
+</html>
